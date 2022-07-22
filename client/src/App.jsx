@@ -4,14 +4,16 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
 // Components
-import { SignUp } from "./components";
+import { SignUp, Toast, Books } from "./components";
 
 function App() {
   return (
     <div>
       <Routes>
         <Route path="/" element={<SignUp />} />
+        <Route path="/books" element={<Books />} />
       </Routes>
+      <Toast />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import BookOnHover from "./BookOnHover/BookOnHover";
 
 const BookComp = ({ title, src, price, desc }) => {
   return (
-    <div className="text-white md:w-60 md:min-h-[80%] border-2 border-custom-3 rounded-2xl p-2 group relative ">
+    <div className="text-white md:w-[19rem] md:min-h-[80%] border-2 border-custom-3 rounded-2xl p-2 group relative ">
       <BookOnHover />
       <div className="rounded-2xl">
         <img

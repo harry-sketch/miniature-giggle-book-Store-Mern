@@ -28,8 +28,8 @@ const SignUp = () => {
   };
 
   const handleSignUp = async (e) => {
-    e.preventDefault();
     try {
+      e.preventDefault();
       const res = await fetch(url, {
         method: "Post",
         body: JSON.stringify(formData),

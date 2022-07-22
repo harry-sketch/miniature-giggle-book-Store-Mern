@@ -27,7 +27,7 @@ const Books = () => {
     }
   };
   return (
-    <div className="bg-custom-1 pt-20 px-6 pb-6 md:place-items-center grid-cols-2 w-full min-h-screen text-white  grid md:grid-cols-4 gap-2 md:gap-4 md:items-center md:justify-center">
+    <div className="bg-custom-1 pt-20 px-6 pb-6 md:place-items-center grid-cols-2 w-full min-h-screen text-white  grid md:grid-cols-4 gap-2  md:items-center md:justify-center">
       {books && books.length > 0 ? (
         books.map((book) => (
           <BookComp

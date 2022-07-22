@@ -22,4 +22,4 @@ const BasicInput = ({ type, name, placeholder, value, onChange }) => {
   );
 };
 
-export default BasicInput;
+export default React.memo(BasicInput);

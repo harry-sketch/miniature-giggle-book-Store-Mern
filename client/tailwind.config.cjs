@@ -9,6 +9,7 @@ module.exports = {
           3: "#00C39A",
         },
       },
+      display: ["group-hover"],
     },
   },
   plugins: [],

@@ -55,10 +55,27 @@ const login = async (req, res, next) => {
   console.log(data);
 };
 
+const getOneBook = async (req, res, next) => {
+  const data = await bookModel.findOne({ _id: req.params.id });
+  res.send(data);
+  console.log(data);
+};
+
+const updateBook = async (req, res, next) => {
+  const data = await bookModel.updateOne(
+    { _id: req.params.id },
+    { $set: req.body }
+  );
+  res.send(data);
+  console.log(data);
+};
+
 module.exports = {
   signUp,
   addBooks,
   getBooks,
   addContact,
   login,
+  getOneBook,
+  updateBook,
 };

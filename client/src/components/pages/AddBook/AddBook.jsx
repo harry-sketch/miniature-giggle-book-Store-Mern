@@ -59,24 +59,28 @@ const AddBook = () => {
         name="title"
         value={title}
         onChange={(e) => handleChange(e)}
+        className="w-1/2"
       />
       <BasicInput
         placeholder="Enter Price in Dollars"
         name="price"
         value={price}
         onChange={(e) => handleChange(e)}
+        className="w-1/2"
       />
       <BasicInput
         placeholder="Enter Description"
         name="desc"
         value={desc}
         onChange={(e) => handleChange(e)}
+        className="w-1/2"
       />
       <BasicInput
         placeholder="Enter Img Url"
         name="imgUrl"
         value={imgUrl}
         onChange={(e) => handleChange(e)}
+        className="w-1/2"
       />
       <button
         type="button"

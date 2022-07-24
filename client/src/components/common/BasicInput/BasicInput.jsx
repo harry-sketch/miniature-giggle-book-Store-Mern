@@ -1,6 +1,13 @@
 import React, { useEffect, useRef } from "react";
 
-const BasicInput = ({ type, name, placeholder, value, onChange }) => {
+const BasicInput = ({
+  type,
+  name,
+  placeholder,
+  value,
+  onChange,
+  className,
+}) => {
   const inputRef = useRef();
 
   useEffect(() => {
@@ -8,7 +15,7 @@ const BasicInput = ({ type, name, placeholder, value, onChange }) => {
   }, []);
 
   return (
-    <div className="bg-custom-2  w-1/2 text- my-4 text-white">
+    <div className={`bg-custom-2 text- my-4 text-white ${className}`}>
       <input
         ref={inputRef}
         type={type}

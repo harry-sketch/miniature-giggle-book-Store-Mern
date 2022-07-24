@@ -36,6 +36,7 @@ const Books = () => {
             src={book.imgUrl}
             desc={book.desc}
             price={book.price}
+            id={book._id}
           />
         ))
       ) : (

@@ -57,6 +57,7 @@ const Contact = () => {
         name="name"
         value={contact.name}
         onChange={(e) => handleChange(e)}
+        className="w-1/2"
       />
       <BasicInput
         placeholder="Enter Email"
@@ -64,6 +65,7 @@ const Contact = () => {
         name="email"
         value={contact.email}
         onChange={(e) => handleChange(e)}
+        className="w-1/2"
       />
       <BasicInput
         placeholder="Enter Phone"
@@ -71,6 +73,7 @@ const Contact = () => {
         name="phone"
         value={contact.phone}
         onChange={(e) => handleChange(e)}
+        className="w-1/2"
       />
       <textarea
         name="desc"

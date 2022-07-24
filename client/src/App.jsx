@@ -12,6 +12,8 @@ import {
   AddBook,
   About,
   Contact,
+  Login,
+  PrivateComponent,
 } from "./components";
 
 function App() {
@@ -24,10 +26,13 @@ function App() {
       {!path.includes(location.pathname) && <Header />}
       <Routes>
         <Route path="/" element={<SignUp />} />
-        <Route path="/books" element={<Books />} />
-        <Route path="/addBook" element={<AddBook />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route element={<PrivateComponent />}>
+          <Route path="/books" element={<Books />} />
+          <Route path="/addBook" element={<AddBook />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
       </Routes>
       <Toast />
     </div>

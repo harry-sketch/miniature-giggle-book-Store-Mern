@@ -49,9 +49,16 @@ const addContact = async (req, res, next) => {
   }
 };
 
+const login = async (req, res, next) => {
+  const data = await userModel.findOne(req.body).select("-password");
+  res.send(data);
+  console.log(data);
+};
+
 module.exports = {
   signUp,
   addBooks,
   getBooks,
   addContact,
+  login,
 };

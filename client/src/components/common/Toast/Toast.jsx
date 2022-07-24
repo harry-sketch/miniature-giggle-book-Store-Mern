@@ -16,7 +16,7 @@ const Toast = () => {
         toast.map((ele) => (
           <div
             key={ele.id}
-            className={`text-white w-1/4 absolute top-10 right-10  py-4 px-2 rounded-xl flex items-center justify-between z-[60] ${
+            className={`text-white w-1/4 absolute top-14 right-10  py-4 px-2 rounded-xl flex items-center justify-between z-[60] ${
               ele.type === "success" ? "bg-custom-3" : "bg-red-500"
             }`}
           >

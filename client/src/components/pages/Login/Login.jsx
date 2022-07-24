@@ -57,6 +57,7 @@ const Login = () => {
         value={email}
         name="email"
         type="text"
+        className="w-1/2"
       />
       <BasicInput
         placeholder="Password"
@@ -64,6 +65,7 @@ const Login = () => {
         value={password}
         name="password"
         type="password"
+        className="w-1/2"
       />
       <button
         type="button"

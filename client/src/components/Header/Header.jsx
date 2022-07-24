@@ -55,7 +55,7 @@ const Header = () => {
             navigate("/");
           }}
         >
-          Logout 
+          Logout
         </div>
       )}
     </nav>

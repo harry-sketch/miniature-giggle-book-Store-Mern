@@ -62,6 +62,7 @@ const SignUp = () => {
         value={name}
         name="name"
         type="text"
+        className="w-1/2"
       />
       <BasicInput
         placeholder="Email"
@@ -69,6 +70,7 @@ const SignUp = () => {
         value={email}
         name="email"
         type="text"
+        className="w-1/2"
       />
       <BasicInput
         placeholder="Password"
@@ -76,6 +78,7 @@ const SignUp = () => {
         value={password}
         name="password"
         type="password"
+        className="w-1/2"
       />
       <button
         type="button"

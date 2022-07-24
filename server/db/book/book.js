@@ -1,18 +1,10 @@
 const mongoose = require("mongoose");
 
 const BookSchema = new mongoose.Schema({
-  title: {
-    type: String,
-  },
-  price: {
-    type: Number,
-  },
-  desc: {
-    type: String,
-  },
-  imgUrl: {
-    type: String,
-  },
+  title: String,
+  price: String,
+  desc: String,
+  imgUrl: String,
 });
 
 const bookModel = mongoose.model("lists", BookSchema);

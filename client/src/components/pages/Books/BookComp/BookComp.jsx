@@ -2,10 +2,10 @@ import React from "react";
 
 import BookOnHover from "./BookOnHover/BookOnHover";
 
-const BookComp = ({ title, src, price, desc, id }) => {
+const BookComp = ({ title, src, price, desc, handleDelete }) => {
   return (
     <div className="text-white md:w-[19rem] md:min-h-fit border-2 border-custom-3 rounded-2xl p-2 group relative ">
-      <BookOnHover id={id} />
+      <BookOnHover handleDelete={handleDelete} />
       <div className="rounded-2xl">
         <img
           src={src}

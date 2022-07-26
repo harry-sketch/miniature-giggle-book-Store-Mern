@@ -70,6 +70,12 @@ const updateBook = async (req, res, next) => {
   console.log(data);
 };
 
+const deleteBook = async (req, res, next) => {
+  const data = await bookModel.deleteOne({ _id: req.params.id });
+  res.send(data);
+  console.log(data);
+};
+
 module.exports = {
   signUp,
   addBooks,
@@ -78,4 +84,5 @@ module.exports = {
   login,
   getOneBook,
   updateBook,
+  deleteBook,
 };

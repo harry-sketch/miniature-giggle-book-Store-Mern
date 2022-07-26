@@ -7,6 +7,7 @@ const {
   login,
   getOneBook,
   updateBook,
+  deleteBook,
 } = require("../controllers/bookController");
 
 const router = express.Router();
@@ -23,5 +24,8 @@ router.post("/login", login);
 
 // Put Routes
 router.put("/update/:id", updateBook);
+
+// Delete Routes
+router.delete("/delete/:id", deleteBook);
 
 module.exports = router;

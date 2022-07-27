@@ -8,6 +8,7 @@ const {
   getOneBook,
   updateBook,
   deleteBook,
+  searchBook,
 } = require("../controllers/bookController");
 
 const router = express.Router();
@@ -15,6 +16,7 @@ const router = express.Router();
 // Get Routes
 router.get("", getBooks);
 router.get("/update/:id", getOneBook);
+router.get("/search/:name", searchBook);
 
 // Post Routes
 router.post("/signUp", signUp);

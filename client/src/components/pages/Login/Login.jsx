@@ -74,6 +74,12 @@ const Login = () => {
       >
         Login
       </button>
+      <div className="mt-3 text-white">
+        new user ?
+        <span className="ml-2 text-lg underline text-blue-400 cursor-pointer font-bold" onClick={() => navigate("/")}>
+          Sign Up
+        </span>
+      </div>
     </div>
   );
 };

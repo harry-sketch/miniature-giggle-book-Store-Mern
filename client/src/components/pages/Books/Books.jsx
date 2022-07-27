@@ -5,11 +5,7 @@ import useBook from "../../../hooks/useBook";
 import BookComp from "./BookComp/BookComp";
 
 const Books = () => {
-  const [books, setBooks] = useState([]);
-
-  const { addToast } = useBook();
-
-  const url = "http://localhost:5000/books";
+  const { addToast, books, setBooks, fetchBooks } = useBook();
 
   const handleDelete = async (id) => {
     try {
@@ -30,18 +26,6 @@ const Books = () => {
     console.log(books);
   }, []);
 
-  const fetchBooks = async () => {
-    try {
-      const res = await fetch(url, {
-        method: "get",
-      });
-
-      const data = await res.json();
-      setBooks(data);
-    } catch (err) {
-      console.log(err);
-    }
-  };
   return (
     <div className="bg-custom-1 pt-20 px-6 pb-6 md:place-items-center grid-cols-2 w-full min-h-screen text-white  grid md:grid-cols-4 gap-2  md:items-center md:justify-center">
       {books && books.length > 0 ? (

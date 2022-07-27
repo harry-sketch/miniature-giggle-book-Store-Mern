@@ -76,6 +76,16 @@ const deleteBook = async (req, res, next) => {
   console.log(data);
 };
 
+const searchBook = async (req, res, next) => {
+  const data = await bookModel.find({
+    $or: [
+      { title: { $regex: req.params.name } },
+      { price: { $regex: req.params.name } },
+    ],
+  });
+  res.send(data);
+};
+
 module.exports = {
   signUp,
   addBooks,
@@ -85,4 +95,5 @@ module.exports = {
   getOneBook,
   updateBook,
   deleteBook,
+  searchBook,
 };

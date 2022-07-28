@@ -23,7 +23,6 @@ const Books = () => {
 
   useEffect(() => {
     fetchBooks();
-    console.log(books);
   }, []);
 
   return (
